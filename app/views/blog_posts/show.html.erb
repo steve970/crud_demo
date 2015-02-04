@@ -5,3 +5,5 @@
 <%= @blog_post.content %>
 <br/>
 <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
+<br/>
+<%= link_to "Delete this post", blog_post_path(@blog_post), method: :delete %>
