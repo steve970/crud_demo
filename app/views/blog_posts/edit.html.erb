@@ -1,0 +1,18 @@
+<%= form_for @blog_post, url: blog_post_path(@blog_post), method: :patch do |f| %>
+  <div>
+    <%= f.label :title  %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
+  <div>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+  <%= f.submit "Update Blog Post" %>
+<% end %>
