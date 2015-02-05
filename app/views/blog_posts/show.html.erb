@@ -1,9 +1,11 @@
-<%= @blog_post.title %>
+<h1><%= @blog_post.title %></h1>
 <br/>
-<%= @blog_post.author %>
+<h3><%= @blog_post.author %></h3>
 <br/>
-<%= @blog_post.content %>
+<p><%= @blog_post.content %></p>
 <br/>
-<%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
+<div><%= link_to 'Edit', edit_blog_post_path(@blog_post) %></div>
 <br/>
-<%= link_to "Delete this post", blog_post_path(@blog_post), method: :delete %>
+<div><%= link_to 'Delete this post', blog_post_path(@blog_post), method: :delete %></div>
+<br/>
+<div><%= link_to 'To the Directory', blog_posts_path %></div>

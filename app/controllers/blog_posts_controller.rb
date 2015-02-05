@@ -25,7 +25,7 @@ class BlogPostsController < ApplicationController
   def update
     @blog_post = BlogPost.find(params[:id])
     if @blog_post.update(blog_post_params)
-      redirect_to blog_post_path(@blog_post)
+      redirect_to blog_posts_path
     else
       # This is a convention for handling errors, which will be covered more closely at another time
       render :edit
