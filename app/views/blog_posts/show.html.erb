@@ -6,6 +6,6 @@
 <br/>
 <div><%= link_to 'Edit', edit_blog_post_path(@blog_post) %></div>
 <br/>
-<div><%= link_to 'Delete this post', blog_post_path(@blog_post), method: :delete %></div>
+<div><%= link_to 'Delete this post', blog_post_path(@blog_post), method: :delete, data: {confirm: "Are you sure?"} %></div>
 <br/>
 <div><%= link_to 'To the Directory', blog_posts_path %></div>
